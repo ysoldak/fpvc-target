@@ -3,7 +3,15 @@
 Turn your FPV Combat board, sensor and gun to a nice ground target and a reliable test station!  
 You'll need [FPV Combat kit](https://fpv-combat.com/) and some other parts, full list below.  
 Bottom plate has holes for easy mount on any standard camera tripod.  
-Custom firmware in form of .hex file can be downloaded from [Releases](https://github.com/ysoldak/fpvc-target/releases).
+Custom firmware for FPVCombat HW25 in form of `.hex` file can be downloaded from [Releases](https://github.com/ysoldak/fpvc-target/releases).
+
+<table>
+<tr><td>
+<img src="media/Main.jpg" title="main" height="400" />
+</td><td>
+<img src="media/InTheWild.jpg" title="In the wild" height="400" />
+</td></tr>
+</table>
 
 ## Bill of materials
 
