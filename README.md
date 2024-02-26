@@ -7,9 +7,9 @@ Custom firmware for FPVCombat HW25 in form of `.hex` file can be downloaded from
 
 <table>
 <tr><td>
-<img src="media/Main.jpg" title="main" height="400" />
+<img src="media/Main.jpg" title="main" height="300" />
 </td><td>
-<img src="media/InTheWild.jpg" title="In the wild" height="400" />
+<img src="media/InTheWild.jpg" title="In the wild" height="300" />
 </td></tr>
 </table>
 
