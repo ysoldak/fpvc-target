@@ -3,7 +3,7 @@
 Turn your FPV Combat board, sensor and gun to a nice ground target and a reliable test station!  
 You'll need [FPV Combat kit](https://fpv-combat.com/) and some other parts, full list below.  
 Bottom plate has holes for easy mount on any standard camera tripod.  
-Custom firmware for FPVCombat HW25 in form of `.hex` file can be downloaded from [Releases](https://github.com/ysoldak/fpvc-target/releases).
+Custom firmware for FPVCombat boards in form of `.hex` file can be downloaded from [Releases](https://github.com/ysoldak/fpvc-target/releases).
 
 <table>
 <tr><td>
@@ -44,6 +44,7 @@ Wiring of the sensor, gun, HC-12 and addressible 10 RGB strip is straightforward
 - Solder XT60 male connector to "+" and "-" of the board to power from any standard battery. Best if with extra mounting brackets to screw to the base plate.
 - Solder mode switch to TRIG connector, shorting Signal and Ground enables "TARGET" mode.
 - Connect 5V of I2C to any of RC PWM 5V (TRIG, IN or OUT)
+- On HW26, sensor shall be connected to `Sensor 1` pins, other sensor pins will not work.
 
 ## Flashing
 
