@@ -42,9 +42,11 @@ Wiring of the sensor, gun, HC-12 and addressible 10 RGB strip is straightforward
 
 ### Special wiring
 - Solder XT60 male connector to "+" and "-" of the board to power from any standard battery. Best if with extra mounting brackets to screw to the base plate.
-- Solder mode switch to TRIG connector, shorting Signal and Ground enables "TARGET" mode.
+- Solder mode switch to SCL pin, shorting SCL and GND enables "TARGET" mode.
 - Connect 5V of I2C to any of RC PWM 5V (TRIG, IN or OUT)
 - On HW26, sensor shall be connected to `Sensor 1` pins, other sensor pins will not work.
+- Trigger gun manually by shorting TRIG and GND (when in TARGET mode) -- simple trigger to shoot at air targets?
+- Trigger hit manually by shorting PWM_IN and GND (when in TARGET mode) -- bomb drop detection?
 
 ## Flashing
 
@@ -56,7 +58,7 @@ The combat board can be easily restored to original state by flashing official F
 Operation modes can be switched at any time with a help of the mode switch, see Wiring.
 
 ### Test Mode (default)
-"Signal" and "Ground" of RC PWM TRIG must be disconnected.
+"SCL" and "GND" must be disconnected.
 
 Test mode is indicated by a sigle pixel/led moving back and forth.
 
@@ -72,7 +74,7 @@ In case of any test step fails, respective led (GUN, NETWORK or SENSOR) turns re
 Color of the moving led indicates the result of the previous test session (green for success and red for failure).
 
 ### Target Mode
-"Signal" and "Ground" of RC PWM TRIG must be connected.
+"SCL" and "GND" must be connected.
 
 Target mode is indicated by 10 blue leds.
 
@@ -80,3 +82,6 @@ Once a hit is received, a single green led (top/first row) replaces the blue led
 Once 5 hits received, first led of the bottom row turns green (indicating 5 hits) and first row clears.
 10 hits indicated by red led of the second row.
 Maximum number of hits indicated: 54 (five red leds of the second row and four green leds of the first row)
+
+When in target mode, trigger gun or hit manually by shorting TRIG and PWM_IN to GND respecfully (since version 1.5.0).  
+This feature enables a custom hit detection (bomb drop?) and simple button shooting (ground turret?).
